@@ -1,0 +1,44 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+#image-gallery{
+    width: 35rem;
+    margin: 4rem auto;
+}
+
+h2{
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#main-image{
+    /* width: 100%; */
+    padding: 1rem;
+    box-shadow: 3px 3px 5px black;
+    max-width: 500px;
+    margin-left: 20%;
+}
+
+#thumbnail-container{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    box-shadow: 3px 3px 5px black;
+    background-color: cadetblue;
+}
+
+.thumbnail{
+    height: 100px;
+    width: 100px;
+    padding: 20px;
+    /* margin: 0 10px; */
+    cursor: pointer;
+}

@@ -1,0 +1,70 @@
+body{
+    margin: 0; /*content outside space */
+    padding: 0; /*content inside space*/
+    margin-bottom: 2.5%;
+}
+
+header{
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    width: 100%;
+    position: sticky;
+    top: 0;
+}
+
+ul{
+    list-style-type: none;  /*bullet points remove*/
+}
+
+ul li{
+    display: inline;  /*displaying in same line*/
+    margin-right: 30px;
+}
+
+ul li a{
+    text-decoration: none; /*remove underline in link*/
+    color: white;     /*font color*/
+    font-weight: bold;  /*font bold or something*/
+    font-size: 20px;    /*font size*/
+}
+
+/*id*/
+#products{
+    display: flex;  /*row to horizontal way*/
+    flex-wrap: wrap;
+    justify-content: space-around; /*space around content equally*/
+    align-items: center;
+}
+
+/*class*/
+.product{
+    border: 2px solid;  /*border - width, style*/
+    border-radius: 10px;
+    margin: 20px;
+    padding: 10px;
+    text-align: center;
+}
+
+button{
+    background-color: black;
+    color: white;
+    border: none;
+    border-radius: 50px;
+    padding: 10px;
+}
+
+button:hover{
+    background-color: blue;
+}
+
+footer{
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 0;
+    position: fixed; /*where to place while zoom in and out*/
+    bottom: 0;       /*place bottom of the page*/
+    width: 100%;     /*width for widing the border*/
+}

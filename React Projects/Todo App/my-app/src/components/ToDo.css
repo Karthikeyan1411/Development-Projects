@@ -1,0 +1,99 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+.todo-app{
+    max-width: 600px;
+    background-color: rgb(52, 52, 122);
+    border-radius: 10px;
+    margin: 20px auto;
+    padding: 20px;
+    box-shadow: 8px 8px 12px black;
+}
+
+h1{
+    text-align: center;
+}
+
+.input-container input{
+    width: 75%;
+    border: none;
+    outline: none;
+    border-radius: 20px;
+    padding: 10px;
+    box-shadow: 4px 4px 12px black;
+    margin-right: 10px;
+}
+
+button{
+    background-color: lightgreen;
+    border: none;
+    outline: none;
+    border-radius: 20px;
+    color: black;
+    padding: 10px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-left: 30px;
+    box-shadow: 4px 4px 12px black;
+}
+
+button:hover{
+    background-color: aqua;
+}
+
+ul{
+    list-style-type: none;
+    padding: 10px;
+}
+
+ul li{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+ul li button{
+    margin-bottom: 10px;
+}
+
+.completed{
+    text-decoration: line-through;
+    color: #888;
+}
+
+.checkbox{
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    outline: none;
+    cursor: pointer;
+    position: relative;
+    margin-right: 10px;
+}
+
+.checkbox::before{
+    content: '\2713';
+    display: inline-block;
+    font-size: 16px;
+    color: red;
+    font-weight: bold;
+    text-align: center;
+    line-height: 20px;
+    vertical-align: middle;
+    position: absolute;
+    left: 3px;
+    top: -1px;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.todo-app input[type="checkbox"]:checked::before{
+    opacity: 1;
+}

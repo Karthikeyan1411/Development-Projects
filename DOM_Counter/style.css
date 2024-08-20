@@ -1,0 +1,62 @@
+body{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+    /* background-color: rgb(156, 230, 205); */
+}
+#app{
+    background-color: rgb(149, 151, 199);
+    padding: 30px;
+    border-radius: 50px;
+    text-align: center;
+    box-shadow: 2px 2px 10px rgb(9, 36, 210);
+}
+
+h1{
+    font-weight: bold;
+    font-size: 1000;
+    color: rgb(112, 81, 41);
+    animation: blink 1s infinite alternate;
+}
+
+@keyframes blink{
+    0%{
+        opacity: 1;
+    }
+    50%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+#counter{
+    font-size: 50px;
+    margin: 15px 0;
+    color: aqua;
+}
+
+button{
+    border: none;
+    outline: none;
+    padding: 10px;
+    border-radius: 50px;
+    box-shadow: 2px 2px 10px rgb(9, 36, 210);
+    cursor: pointer;
+    background-color: rgb(73, 73, 211);
+    color: white;
+    font-size: 17px;
+    margin: 5px;
+    transition: 2s ease;
+}
+
+button:hover{
+    background-color: aqua;
+    color: black;
+    transform: scale(1.08);
+}

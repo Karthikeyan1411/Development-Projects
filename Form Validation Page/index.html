@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FORM VALIDATION</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+
+    <h1>SIMPLE FORM VALIDATION</h1>
+
+    <form onsubmit="return validateForm()"> <!--we not use button tag here. that's why we using onsubmit, otherwise onclick-->
+        <label>Full Name: </label>
+        <input type="text" id="name" placeholder="Full Name">
+        <span id="nameError" class="error"></span> <!--Error from javascript-->
+        
+        <label>E-Mail: </label>
+        <input type="email" id="email" placeholder="kk@gmail.com">
+        <span id="emailError" class="error"></span> <!--Error from javascript-->
+        
+        <input type="submit" class="button" value="Submit">
+    </form>
+
+    <script src="../script/script.js"></script>
+    
+</body>
+</html>

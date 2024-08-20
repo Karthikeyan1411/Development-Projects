@@ -1,0 +1,87 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;  /*most usable font family for portfolios*/
+}
+
+.hero{
+    position: relative;
+    height: 100vh;
+    width: 100%;
+}
+
+nav{
+    /* background-color: rgb(208, 81, 208); */
+    display: flex;
+    width: 98%;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+    padding: 20px 0;
+}
+
+nav ul li{
+    display: inline-block; /*use for avoid overlapping*/
+    list-style-type: none;
+    margin: 10px 20px;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: black;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.main{
+    margin-top: 13%;
+    margin-left: 10%;
+}
+
+.main h1{
+    font-size: 50px;
+}
+
+span{
+    color: rgb(18, 18, 74);
+}
+
+.main p{
+    font-size: 20px;
+    line-height: 27px;
+}
+
+.main a{
+    text-decoration: none;
+    background-color: crimson;
+    color: white;
+    padding: 15px;
+    border-radius: 20px;
+    margin-top: 20px;
+}
+
+.images{
+    width: 45%;
+    height: 80%;
+    position: absolute;
+    bottom: 0;
+    right: 100px;
+}
+
+.images img{
+    height: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%); /*Horizontal Animation*/
+    transition: bottom 1s left 1s;
+    border-radius: 50px;
+}
+
+.images:hover .shape{
+    bottom: 40px;
+}
+
+.images:hover .boy{
+    left: 50%;
+}

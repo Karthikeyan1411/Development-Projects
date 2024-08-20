@@ -1,0 +1,14 @@
+{
+  "name": "day-25",
+  "version": "1.0.0",
+  "description": "QR Code Generator",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Karthikeyan M",
+  "license": "ISC",
+  "dependencies": {
+    "qrcode": "^1.5.4"
+  }
+}

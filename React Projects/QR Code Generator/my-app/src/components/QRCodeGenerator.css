@@ -1,0 +1,86 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+.qr-generator-container{
+    background: linear-gradient(to right,rgb(51, 51, 136), rgb(117, 38, 38));
+    width: 30rem;
+    height: 32rem;
+    margin: 20px auto;
+    border-radius: 20px;
+}
+
+h2{
+    text-align: center;
+    font-size: 30px;
+    color: yellowgreen;
+    font-style: oblique;
+}
+
+.form-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+label, input{
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    height: 50px;
+    border: none;
+    outline: none;
+    font-weight: bold;
+    margin: auto;
+}
+
+label{
+    padding: 10px;
+    font-size: 20px;
+    color: rgb(36, 181, 53);
+    font-weight: bold;
+    margin-bottom: 5px;
+    text-align: left;
+}
+
+input{
+    padding: 10px;
+    background-color: rgb(174, 167, 167);
+    margin-top: 5px;
+    border-radius: 20px;
+}
+
+button{
+    border: none;
+    outline: none;
+    margin-top: 17px;
+    margin-left: 10px;
+    padding: 13px;
+    background-color: black;
+    cursor: pointer;
+    color: rgb(36, 181, 53);
+    border-radius: 50px;
+    font-weight: bold;
+}
+
+.qr-code-container{
+    background: linear-gradient(to right,rgb(51, 51, 136), rgb(117, 38, 38));
+    width: 30rem;
+    height: 18rem;
+    margin: 20px auto;
+    border-radius: 20px;
+    text-align: center;
+}
+
+h3{
+    text-align: center;
+    font-size: 30px;
+    color: yellowgreen;
+    font-style: oblique;
+}
+
+.qr-code-container img{
+    display: inline-block;
+    margin-bottom: 30px;
+}

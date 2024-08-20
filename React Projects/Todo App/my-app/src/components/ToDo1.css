@@ -1,0 +1,102 @@
+*{
+    border: none;
+    outline: none;
+    scroll-behavior: smooth;
+}
+
+html, body{
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+html::-webkit-scrollbar{
+    width: 12px;
+}
+
+html::-webkit-scrollbar-track{
+    background: #f1f1f1;
+    border-radius: 10px;
+}
+
+html::-webkit-scrollbar-thumb{
+    background: #888;
+    border-radius: 10px;
+}
+html::-webkit-scrollbar-thumb:hover{
+    background: #555;
+}
+
+.app-container{
+    background-color: black;
+    color: white;
+    margin: 20px auto;
+    max-width: 600px;
+    box-shadow: 4px 4px 4px red;
+    border-radius: 30px;
+    padding: 30px;
+}
+
+h1{
+    text-align: center;
+    font-weight: bold;
+    text-decoration: underline;
+    text-decoration-color: blue;
+    font-style: italic;
+    padding: 20px;
+}
+
+.input-task{
+    /* box-shadow: 4px 4px 4px red; */
+    background-color: rgb(76, 54, 54);
+    width: 75%;
+    padding: 10px;
+    border-radius: 30px;
+    margin-right: 20px;
+    margin-left: 20px;
+    color: rgb(25, 180, 25);
+    font-weight: bold;
+}
+
+.input-task:hover{
+    box-shadow: 4px 4px 4px red;
+}
+
+button{
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 30px;
+    font-weight: bold;
+    background-color: grey;
+}
+
+button:hover{
+    background-color: chocolate;
+    box-shadow: 4px 4px 4px red;
+}
+
+ul{
+    list-style-type: none;
+    padding: 10px;
+}
+
+ul li{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+ul li button{
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+
+.completed{
+    text-decoration: line-through;
+    color: grey;
+}
+
+.checkbox{
+    cursor: pointer;
+}

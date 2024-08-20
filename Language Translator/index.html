@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LANGUAGE TRANSLATOR</title>
+
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+        }
+        header{
+            font-weight: bold;
+            background-color: black;
+            color: white;
+            text-align: center;
+            padding: 10px;
+        }
+        nav{
+            padding: 10px;
+            background-color: rgb(109, 98, 98);
+            text-align: center;
+        }
+        nav a{
+            text-decoration: none;
+            color: white;
+            padding-right: 20px;
+        }
+        .about-us{
+            background-color: rgb(139, 102, 102);
+            font-size: 30px;
+            text-align: center;
+        }
+        .about-us p{
+            color: white;
+            text-align: justify;
+        }
+        .about-us .team{
+            text-decoration: none;
+            color: black;
+            background-color: white;
+            padding: 10px;
+            border-radius: 10px;
+        }
+    </style>
+
+</head>
+<body>
+    <!-- header section -->
+    <header>
+        ONE PAGE WEBSITE
+    </header>
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="service.html">Services</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+
+    <section class="about-us">
+        <h2>ABOUT US</h2>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minima ducimus iure consequuntur accusantium culpa officia non. Magni vitae error accusamus? Praesentium laudantium aspernatur commodi quis eaque. Cupiditate adipisci dolorem numquam.</p>
+        <a href="#" class="team">Our Team</a>
+    </section>
+
+    <p id="demo"></p>
+
+    <script src="https:translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
+    <script>
+        // Inbuilt function for google translate in js
+        function googleTranslateElementInit()
+        {
+            new google.translate.TranslateElement(
+                {pagelanguage: "en"},
+                'demo'
+            );
+        }
+    </script>
+
+</body>
+</html>

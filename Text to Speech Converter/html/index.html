@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TEXT TO SPEECH</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    
+    <div id="container">
+        <h1>Text to Speech</h1>
+        <textarea id="textToSpeak"></textarea>
+        <button onclick="speak()">Text to Speak</button>
+    </div>
+
+    <script>
+        var speech = new SpeechSynthesisUtterance();
+        function speak(){
+            speech.text = textToSpeak.value;
+            speech.rate = 1; /*speak clearly*/
+            speech.volume = 5;
+            speech.pitch = 1; /*frequency*/
+
+            window.speechSynthesis.speak(speech); /*output*/
+        }
+    </script>
+
+</body>
+</html>

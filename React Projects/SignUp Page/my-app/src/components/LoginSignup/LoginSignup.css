@@ -1,0 +1,111 @@
+body{
+    background: linear-gradient(to right,blue, red);
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    margin-top: 100px;
+    width: 600px;
+    height: 500px;
+    background: white;
+    padding-bottom: 35px;
+    border-radius: 50px;
+    background: linear-gradient(to left, rgb(93, 167, 93), rgb(120, 38, 38), rgb(118, 118, 40));
+    transition: all 0.3s ease;
+}
+
+.container:hover{
+    transform: scale(1.02);
+}
+
+.header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.text{
+    color: blueviolet;
+    font-weight: bold;
+    font-size: 50px;
+}
+
+.underline{
+    width: 60px;
+    height: 6px;
+    background-color: blueviolet;
+    border-radius: 10px;
+    margin-top: 10px;
+}
+
+.inputs{
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.input{
+    display: flex;
+    align-items: center;
+    margin: auto;
+    background-color: rgb(39, 46, 68);
+    height: 80px;
+    width: 480px;
+    border-radius: 10px;
+}
+
+.input img{
+    margin: 0 25px;
+}
+
+.input input{
+    height: 50px;
+    width: 400px;
+    color: gray;
+    background: transparent;
+    font-size: 20px;
+    border: none;
+    outline: none;
+}
+
+.forgot-password{
+    padding-left: 60px;
+    margin-top: 10px;
+    color: gray;
+    font-size: 20px;
+}
+
+.forgot-password span{
+    color: blueviolet;
+    cursor: pointer;
+}
+
+.forgot-password span:hover{
+    color: green;
+}
+
+.submit-container{
+    display: flex;
+    gap: 30px;
+    margin: 20px auto;
+}
+
+.submit{
+    background-color: gray;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    height: 60px;
+    width: 220px;
+    font-weight: bold;
+    font-size: 20px;
+    color: white;
+    border-radius: 10px;
+}
+
+.submit:hover{
+    background: linear-gradient(to left,blue, grey);
+}

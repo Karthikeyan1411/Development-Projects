@@ -1,0 +1,67 @@
+body{
+    margin: 0;
+    padding: 0;
+    /* text-align: center;
+    align-items: center; */
+    background-color: white;
+}
+
+.container{
+    max-width: 600px;
+    background-color: rgb(167, 162, 199);
+    margin: 20px auto;
+    padding: 20px;
+    box-shadow: 4px 4px 12px black;
+    border-radius: 10px;
+}
+
+h1{
+    text-align: center;
+}
+
+input{
+    width: 75%;
+    border: none;
+    outline: none;
+    border-radius: 20px;
+    padding: 10px;
+    box-shadow: 4px 4px 12px black;
+    margin-right: 10px;
+}
+
+button{
+    background-color: lightgreen;
+    border: none;
+    outline: none;  /*when click text field it shows one border - so this line removes that border*/
+    border-radius: 20px;
+    color: black;
+    padding: 10px;
+    box-shadow: 4px 4px 12px black;
+    font-weight: bold;
+    cursor: pointer;
+    margin-left: 30px;
+}
+
+button:hover{
+    background-color: white;
+}
+
+#todo-list{
+    list-style-type: none;
+    padding: 10px;
+}
+
+#todo-list li{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.delete-btn{
+    background-color: orange;
+    margin-top: 5px;
+    font-weight: bold;
+    box-shadow: 2px 2px 5px black;
+    border-radius: 20px;
+}
